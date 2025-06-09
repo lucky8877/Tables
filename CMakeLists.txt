@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 project(Table)
 
-# Все исходные файлы
 add_executable(main 
     src/main.cpp
     src/Table/ArrayTable.cpp
@@ -13,5 +12,4 @@ add_executable(main
     src/Table/TreeTable.cpp
 )
 
-# Подключаем заголовки
 target_include_directories(main PRIVATE include)
